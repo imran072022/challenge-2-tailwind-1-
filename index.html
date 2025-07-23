@@ -4,11 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwind-style.css" />
     <title>First website using Tailwind CSS</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!--Main Wrapper-->
+    <div>
+      <!--Header-->
+      <header class="max-w-[1170px] mx-auto my-0">
+        <!--Navigation Bar-->
+        <nav class="flex items-center justify-between mt-[50px] mb-[50px]">
+          <img src="images/logo2.png" alt="Logo" />
+          <ul class="flex gap-[30px]">
+            <li><a href="">Home</a></li>
+            <li>
+              <a href="" class="flex justify-center items-center gap-1"
+                >Services <img src="images/next-button.png"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify-center items-center gap-1"
+                >Cases <img src="images/next-button.png"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify-center items-center gap-1"
+                >Blog <img src="images/next-button.png"
+              /></a>
+            </li>
+            <li>
+              <a href="" class="flex justify-center items-center gap-1"
+                >Contact Us <img src="images/next-button.png"
+              /></a>
+            </li>
+          </ul>
+          <button
+            class="font-semibold text-[18px] bg-[#B68C5A] text-white rounded-[8px] px-[30px] py-[18px]"
+          >
+            Free Consultation
+          </button>
+        </nav>
+        <!--Banner-->
+        <div
+          class="bg-[url('images/banner.png')] h-[550px] w-[1170px] flex justify-center items-center"
+        >
+          <div class="w-[692px] text-center">
+            <h1
+              class="font-extrabold text-[4.5rem] leading-[85px] text-white"
+              style="font-family: 'eb garamond', serif"
+            >
+              We Provide Effective Legal Solutions
+            </h1>
+            <p class="text-[#E7E7E7] mt-6 mb-8">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour.
+            </p>
+            <form class="flex items-center justify-center gap-6">
+              <input
+                class="bg-white rounded-lg w-[500px] h-[64px] pl-5 outline-0"
+                type="search"
+                placeholder="Search your services"
+              />
+              <button
+                class="rounded-lg bg-[#B68C5A] text-white px-[39px] py-[17px] font-semibold text-xl"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
   </body>
 </html>
